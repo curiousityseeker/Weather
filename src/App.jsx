@@ -23,7 +23,7 @@ function App() {
   async function Fetch() {
     try {
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=`;
-      let apiId ="d344caef65849a228074d889bf2669aa"
+      let apiId ="Key"
       let res = await fetch(url + apiId +"&units=metric");
       let data = await res.json();
       if (data.cod === '404') {
